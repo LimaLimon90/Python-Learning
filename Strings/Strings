@@ -1,0 +1,61 @@
+#Strings
+
+#declaracion de strigns con comillas dobles y simples
+variable1="Tipo string"
+variable2='otro tipo string'
+
+#concatenacion de varias variables y strings directos
+concatenar=variable1 + " y " + variable2
+print(concatenar,"\n")
+
+#Caracteres especiales
+#Salto de linea (\n)
+print("Se pueden hacer saltos de linea \ncon el simbolo \\n")
+print("\tLa tabulacion se hace con \\t") 
+
+#Formateo
+ciudad,estado,pais,anio="Mazatlan","Sinaloa","Mexico",2025
+#Impresion directa
+print("Yo vivo en {}, en el estado de {} en {} desde inicios del {}".format(ciudad,estado,pais,anio))
+#impresion directa simplificada
+print(f"Yo vivo en {ciudad}, en el estado de {estado} en {pais} desde inicios del {anio}")
+#Impresion con formato
+print("Desde inicios del %d yo vivo en %s, en la ciudad de %s, %s" %(anio,pais,ciudad,estado))
+
+#Desempaquetado de caracteres
+Nombre="Limon"
+a,b,c,d,e=Nombre
+print(a)
+print(b)
+print(c)
+print(d)
+print(e)
+
+#corte de cadenas de texto
+cadena="esta es una cadena de texto"
+eslabon=cadena[0:-9]
+print(eslabon)
+
+#inversion del orden de cadenas de texto
+inverso=cadena[::-1]
+print(inverso)
+
+#Funciones
+#Generar la primera letra en mayuscula
+print(cadena.capitalize())
+
+#Convertir todo a mayusculas
+print(cadena.upper())
+
+#Convertir todo a minusculas
+print(cadena.lower())
+
+#Contar el numero de de veces que se repite el elemento indicado
+print(cadena.count("a"))
+
+#Comprobar si la cadena de texto es un numero
+print(cadena.isnumeric())
+
+#concatenar varias funciones a la vez
+print(cadena.capitalize().startswith("Esta"))
+
