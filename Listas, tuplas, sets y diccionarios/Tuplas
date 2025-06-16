@@ -1,5 +1,5 @@
 #Tuplas
-#Son variables que contienen un conjunto de elementos y son inmutables.
+#Son variables inmutables que contienen un conjunto ordenado de elementos.
 
 #Declaracion de tuplas con ()
 nombres=("Fernando","Javier")
