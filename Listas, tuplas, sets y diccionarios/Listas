@@ -1,0 +1,54 @@
+#Listas
+
+#Declaraion de listas con []
+datos=["Fernando","Limon","python"]
+lista=[49,45,26,21,12,12]
+Integrantes=["Mama","Papa","El hijo mayor","El hijo del medio","El hijo menor"]
+
+#Impresion de la lista completa
+print(lista)
+print("Lista es del tipo:",type(lista))
+
+#Uso de datos unitarios
+print("Mi nombre es", datos[0], "mi apeido es",datos[1], "y estoy aprendiendo", datos[2])
+
+#concatenacion de listas completas
+print(Integrantes,lista)
+print(Integrantes + lista)
+
+#concatenacion de elementos unicos de listas
+print("La edad de",Integrantes[3],"es de",lista[3],"anios")
+
+#Separacion de datos de una lista en variables
+nombre,apeido,lenguage=datos
+print(nombre)
+print(apeido)
+print(lenguage)
+
+#Funciones para listas
+#Adicion de un nuevo elemento a la lista
+lista.append(25)    #inserta el nuevo elemento al final de la lista
+print(len(lista))
+print(lista)
+lista.insert(4,8)   #inserta el nuevo elemento en la posicion indicada
+print(len(lista))
+print(lista)
+
+#Eliminacion un elemento de una lista
+lista.remove(12)
+print(len(lista))
+print(lista)
+del lista[4]
+print(lista)
+
+#Duplicado de listas
+void=lista.copy()
+print("void:",void)
+
+#invercion del orden de los elementos de la lista
+lista.reverse()
+print(lista)
+
+#Eliminar todos los elementos de la lista
+void.clear()
+print("void:",void)
