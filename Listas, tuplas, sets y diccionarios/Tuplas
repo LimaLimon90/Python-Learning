@@ -1,0 +1,23 @@
+#Tuplas
+#Son variables que contienen un conjunto de elementos y son inmutables.
+
+#Declaracion de tuplas con ()
+nombres=("Fernando","Javier")
+apeidos=("Limon","Gonzalez")
+print(nombres)
+print(type(nombres))
+
+#Funsiones para tuplas
+#Concatenacion de tuplas
+nombre_completo=nombres+apeidos
+print(nombre_completo)
+print(type(nombre_completo))
+
+#Contar el numero de veces que se repite el elemento indicado
+print(nombre_completo.count("Fernando"))
+
+#Conocer la primero posicicon en la tupla del valor indicado
+print(nombre_completo.index("Limon"))
+
+#Concatenado de tuplas
+print("Mi nombre es",nombre_completo[0],nombre_completo[2])
