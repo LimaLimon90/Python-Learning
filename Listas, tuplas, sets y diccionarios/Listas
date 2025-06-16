@@ -1,5 +1,5 @@
 #Listas
-#Son variables que contienen un conjunto de elementos
+#Son variables que contienen un conjunto ordenado de elementos
 
 #Declaraion de listas con []
 datos=["Fernando","Limon","python"]
