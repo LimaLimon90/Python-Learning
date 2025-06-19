@@ -1,0 +1,41 @@
+#Sets
+#Son variables inmutables que contienen un conjunto desordenado de elementos.
+
+#Declaracion de sets
+my_set={"Mi","primer","set"}
+other_set={"Este","es","Mi","otro","set"}
+
+#impresion del set
+print(my_set)
+print(type(my_set))
+
+#Funsiones para sets
+#Contar su cantidad de elementos
+print("El set llamado my_set tiene",len(my_set),"elementos")
+
+#anadir elementos nuevos al set
+my_set.add("en")
+my_set.add("python")
+print(my_set)
+
+#concatenacion de sets
+print(my_set,other_set)
+union_set=my_set.union(other_set)
+print(union_set)
+
+#eliminacion de elementos compartidos con otro set. 
+diferente_set=other_set.difference(my_set)
+print(diferente_set)
+
+#comprobacion de existencia de un elemento en el set
+print("python" in my_set)
+print("python" in other_set)
+
+#eliminar un elemento especifico del set
+my_set.remove("primer")
+print(my_set)
+
+#eliminar todos los elementos de un set
+empty_set={"este","set","esta","vacio"}
+print(empty_set.clear())
+
