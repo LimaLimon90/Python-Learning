@@ -1,0 +1,47 @@
+#Diccionarios
+#Son variables mutables que contienen un con junto de elementos a los que se les puede asignar un valor
+
+#Declaracion de un diccionario con {} y un valor asignado a su elemento con :
+mi_dicc={"Nombre":"Fernando","Apellido":"Limon","Lenguaje":"C++"}
+variables={"Integrer":25,
+		   "Boolean":True,
+		   "Float":3.14159265,
+		   "String":"Texto",
+		   "De conjunto":["lista","tuplas","sets","Diccionarios"]}
+print(mi_dicc)
+print(type(mi_dicc))
+
+#Acceder y modificar valores del diccionario
+mi_dicc["Lenguaje"]="Python"
+print(mi_dicc["Lenguaje"])
+
+variables["De conjunto"][0]="Listas"
+print(variables["De conjunto"][0])
+
+#Añadir elementos al diccionario
+mi_dicc["Ciudad"]="Mazatlan"
+print(mi_dicc)
+
+#Busqueda de una etiqueta y su valor en el diccionario
+print("Apellido" in mi_dicc)
+print("Limon" in mi_dicc["Apellido"])
+
+#Funsiones de los diccionarios
+#LLamar todos las etiquetas y valores del diccionario
+print(mi_dicc.items())
+
+#LLamar todas las etiquetas
+print(mi_dicc.keys())
+
+#LLamar todos los valores
+print(mi_dicc.values())
+
+#Copiar un diccionario a otro
+new_dicc=mi_dicc.copy()
+print(new_dicc)
+other_dicc=mi_dicc.fromkeys(("Nombre","Apellido"))
+print(other_dicc)
+
+#Eliminar un elemento y su etiqueta
+del mi_dicc["Ciudad"]
+print(mi_dicc)
