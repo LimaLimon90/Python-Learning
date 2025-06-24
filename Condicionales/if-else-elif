@@ -1,0 +1,85 @@
+#Condicionales
+#Son funciones que permiten ejecutar un codigo en el caso de cumplirse como verdaderas las comparasiones indicadas.
+
+from math import pi
+
+mi_boolean=True
+mi_otro_boolean=False
+no_boolean=[]
+multiplicacion=2*8
+
+#if 
+#if True
+if mi_boolean==True:
+	print("Mi boolean es verdadero")
+if mi_boolean:
+	print("Este tambien es verdadero")
+#if False
+if mi_otro_boolean==False:
+	print("Mi otro boolean es falso")
+if mi_otro_boolean!=True:
+	print("Mi otro boolean tambien es falso")
+#if Equal
+if multiplicacion==16:
+	print("2x8 es 16")
+#if higher than
+if multiplicacion>12:
+	print("8x2 es mayor que 12")
+#if lower than
+if multiplicacion<20:
+	print("8x2 es menor que 20")
+
+
+#if-else
+if mi_otro_boolean==True:
+	print("Mi otro boolean es verdadero")
+else:
+	print("Mi otro boolean no es verdadero")
+if multiplicacion >12:
+	print("Si, multiplicacion es mayor o 12")
+else:
+	print("No, multiplicacion no es mayor a 12")
+
+#elif
+if no_boolean==True:
+	print("No boolean es verdadero")
+elif no_boolean==False:
+	print("No boolean es falso")
+else:
+	print("No boolean no es ni verdadero ni falso")
+condicion="else"
+if condicion=="if":
+	print("condicion es igual a True")
+elif condicion=="elif":
+	print("Condicion es igual a elif")
+else:
+	print("Condicion puede o no ser igual a else")
+
+#Concatenacion de condiciones 
+#And
+dos_al_cubo=8
+Pii=3.141592653589793
+if dos_al_cubo==8 and Pii==3.141592653589793:
+	print("Ambas condiciones se cumlen")
+elif dos_al_cubo==8:
+	print("Solo la condicion 1 se cumple")
+elif Pii==3.141592653589793:
+	print("Solo la condicion 2 se cumple")
+else:
+	print("Ninguna condicion se cumple")
+
+#Or
+hoy="Sabado"
+if hoy=="Viernes" or hoy=="Sabado" or hoy=="Domingo":
+	print("Es fin de semana")
+else:
+	print("TIenes que ir a trabajar")
+
+#Negacion de condiciones
+#not
+if not hoy=="Domingo":
+	print("Hoy no es domingo")
+clima="Lluvioso"
+#different of
+if clima!="Soleado":
+	print("Esta lloviendo")
