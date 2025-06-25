@@ -83,3 +83,22 @@ clima="Lluvioso"
 #different of
 if clima!="Soleado":
 	print("Esta lloviendo")
+
+#Anidado de condiciones
+variable={}
+if type(variable)==int:
+	print("la variable es de tipo entero")
+elif type(variable)==float:
+	print("la variable es de tipo flotante")
+elif type(variable)==str:
+	print("la variable es de tipo string")
+elif type(variable)==bool:
+	print("la variable es de tipo booleana")
+elif type(variable)==list:
+	print("la variable es de tipo lista")
+elif type(variable)==tuple:
+	print("la variable es de tipo tupla")
+elif type(variable)==set:
+	print("la variable es de tipo set")
+elif type(variable)==dict:
+	print("la variable es de tipo diccionario")
