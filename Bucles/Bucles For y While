@@ -1,0 +1,71 @@
+#Bucles
+#Son estructuras que permiten repetir un conjunto de tareas indefinidamente hasta que se cumpla o deje de cumplirse una condicion
+
+#while
+print("Bucles While")
+from operator import index
+import random
+from textwrap import indent
+
+
+contador=0
+#Declaracion
+while contador<=10:
+	print("El contrador va en: ",contador)
+	contador+=1
+else:
+	print("El primer bucle while ha acabado")
+
+#anidado de funciones
+while contador<=20:
+	print("El contrador va en: ",contador)
+	if contador%2==1:
+		print("  Es non")
+	else:
+		print("  Es par")
+	contador+=1
+else:
+	print("El segundo bucle while ha acabado")
+
+#interrupcion de un bucle
+numero=int(random.uniform(0,20))
+num_impreso=0
+print("El numero aleatorio es:",numero)
+while num_impreso<=20:
+	print("   ",num_impreso)
+	if(num_impreso==numero):
+		break
+	num_impreso+=1
+print("El bucle aleatorio ha finalizado")
+
+#for
+print("Bucles For")
+#declaracion
+tipos_variables=[int,float,bool,str,list,tuple,set,dict]
+valores=[25,3.14,True,"Python",[1,2,3],("hugo","paco","Luis"),{"suma","resta","multiplicacion"},{"Variable":"valor"}]
+mezcla=zip(tipos_variables,valores)
+for indice in mezcla:
+	print("un ejemplo de variable tipo ", indice[0], "es:",indice[1])
+
+#Anidado de funciones
+nombres=["Pedro","Pablo","Hugo","Paco","Luis"]
+for nombre in nombres:
+	print(nombre)
+	if nombre=="Pablo":
+		print("     Eran hermanos")
+else:
+	print("El bucle for ha acabado")
+
+#Interrupcion del bucle
+meses=["enero","febrero","marzo","abril","mayo","junio","julio","agosto","septiembre","octubre","noviembre","diciembre"]
+for mes in meses:
+	print(mes)
+	if mes =="agosto":
+		break
+
+numeros=["Uno","Dos","Tres","Cuatro","Cinco","Seis"]
+for numero in numeros:
+	if numero=="Cinco":
+		continue
+	print(numero,"germen no te vas")
+print("El bucle for ha acabado")
