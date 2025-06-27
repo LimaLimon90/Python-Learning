@@ -1,0 +1,38 @@
+#Classes
+#Son paquetes de datos y funciones orientadas a un objeto en especifico
+
+#Declaracion
+class void:
+	pass
+texto="Esta es mi primera classe "
+#Declaracion de classe sin __init__(self)
+class programa:
+	def imprime(texto):
+		print(texto)
+
+#Generar constructor de clase con __init__(self)
+class Perro:
+	def __init__(self):
+		pass
+
+#Definicion de atributos
+class Person:
+	def __init__(self,nombre, apeido):
+		self.nombre=nombre
+		self.apeido=apeido
+		self.nombre_completo=(f"{nombre} {apeido}")
+#definicion de metodos
+	def camina(self):
+		print(f"{self.nombre_completo} esta caminando")
+
+
+
+
+#Llamado o instnciacion de la classe
+def main():
+	persona=Person("Fernando","Limon")
+	print(persona.nombre_completo) 
+	persona.camina()
+
+if __name__ in "__main__":
+	main()
