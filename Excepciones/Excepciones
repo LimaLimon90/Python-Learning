@@ -1,0 +1,63 @@
+#Excepciones
+#Son pruebas de codigo que se pueden realizar para evitar la interrupcion del programa ante la aparicion de un error
+
+#try-Except
+from typing import final
+
+
+num1=8
+num2=0
+#Declaracion
+try:
+	print(int(num1)/num2)
+except: 
+	print("El try-except imprimira esto cuando ha ocurrido un error. \n")
+
+#Try-Except-Else
+num2=2
+#Declaracion
+try:
+	print(num1/num2)
+except:
+	print("No se ha podido realizar la operacion.\n")
+else:
+	print("El try-except-else imprimira esto si la operacion se ha realizado correctamente.\n")
+
+#Try-Except-Else-Finaly
+try:
+	print(num2/num1)
+except:
+	print("La operacion ha fallado.")
+else:
+	print("La operacion se ha realizado correctamente.")
+finally:
+	print("El try-except-else-Finaly imprimira esto independientemente de si la \noperacion se realizo se realizo correctamente o si fallo.\n")
+
+#Excepciones por tipo de error
+num2=0
+try:
+	print(num1/str(num2))
+except TypeError:
+	print("Una de las variables no es del tipo int.\n")
+
+#Anidado de excepciones
+try:
+	num1=5#input("Ingresa el primer numero.\n")
+	num2=0#nput("Ingresa el segundo numero.\n")
+	print(int(num1)/int(num2))
+except ZeroDivisionError: 
+	print("No se puede dividir entre cero.\n")
+except TypeError:
+	print("Una de las variables no es del tipo int.\n")
+except ValueError:
+	print("Se ingreso una cadena de texto en lugar de un entero.\n")
+
+#Obtencion de la informacion del error
+try:
+	print(str(0)/0)
+except ZeroDivisionError as zero_error:
+	print("Se genero un error del tipo:",zero_error)
+except Exception as e:
+	print("Se genero un error del tipo:",e)
+finally:
+	print("Pero el codigo continua ejecutandose.\n")
