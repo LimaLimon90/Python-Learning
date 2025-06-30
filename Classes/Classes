@@ -2,15 +2,13 @@
 #Son paquetes de datos y funciones orientadas a un objeto en especifico
 
 #Declaracion
-from typing import Self
-
-
 class void:
 	pass
-texto="Esta es mi primera classe "
+
 #Declaracion de classe sin __init__(self)
 class programa:
 	def imprime(texto):
+		texto="Esta es mi primera classe"
 		print(texto)
 
 #Generar constructor de clase con __init__(self)
@@ -24,7 +22,6 @@ class Persona:
 		self.__nombre=nombre
 		self.apeido=apeido
 		self.nombre_completo=f"{nombre} {apeido}"
-		return self.apeido
 
 	def get_name(self):
 		return self.__nombre
@@ -33,7 +30,7 @@ class Persona:
 	def camina(self):
 		print(f"{self.nombre_completo} esta caminando")
 
-#Llamado o instnciacion de la classe
+#Llamado o iniciacion de la classe
 def main():
 	persona=Persona("Fernando","Limon")
 	persona.camina()
