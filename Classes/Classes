@@ -6,9 +6,9 @@ class void:
 	pass
 
 #Declaracion de classe sin __init__(self)
+texto="Esta es mi primera classe"
 class programa:
 	def imprime(texto):
-		texto="Esta es mi primera classe"
 		print(texto)
 
 #Generar constructor de clase con __init__(self)
