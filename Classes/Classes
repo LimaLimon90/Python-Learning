@@ -6,7 +6,6 @@ class void:
 	pass
 
 #Declaracion de classe sin __init__(self)
-texto="Esta es mi primera classe"
 class programa:
 	def imprime(texto):
 		print(texto)
@@ -32,6 +31,8 @@ class Persona:
 
 #Llamado o iniciacion de la classe
 def main():
+	texto="Esta es mi primera classe"
+	programa.imprime(texto)
 	persona=Persona("Fernando","Limon")
 	persona.camina()
 	name=persona.get_name()
