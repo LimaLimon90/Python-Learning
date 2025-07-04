@@ -1,0 +1,91 @@
+#Fechas
+#Creacion, uso y manipulacion de fechas y horas.
+
+def print_time(date):
+	print(date)
+	print(date.timestamp())
+	if date.year:
+		print(date.year)
+	if date.month:
+		print(date.month)
+	if date.day:
+		print(date.day)
+	if date.hour:
+		print(date.hour)
+	if date.minute:
+		print(date.minute)
+	if date.second:
+		print(date.second)
+	if date.microsecond:
+		print(date.microsecond)
+
+def print_weekday(today,text="today is: "):
+	weekday=date.weekday(today)
+	print(text)
+	if weekday==0:
+		print("Monday",today)
+	elif weekday==1:
+		print("Tuesday",today)
+	elif weekday==2:
+		print("Wednesday",today)
+	elif weekday==3:
+		print("Thursday",today)
+	elif weekday==4:
+		print("Friday",today)
+	elif weekday==5:
+		print("Saturday",today)
+	elif weekday==6:
+		print("Sunday",today)
+
+#Llamado del modulo
+from calendar import Day
+from datetime import datetime
+from datetime import time
+from datetime import date
+from datetime import timedelta
+
+#Funsiones
+#Now
+now=datetime.now()
+print_time(now)
+
+#TImespamp
+tiempo=now.timestamp()
+print(tiempo)
+
+#Creacion de un momento
+fecha=datetime(2025,7,3,9,7)
+print_time(fecha)
+
+#Creacion de una hora
+fake_time=time(10,6,40,456842)
+print("La hora es:",fake_time)
+
+#Creacionde una fecha
+fake_date=date(2025,7,12)
+print("Del dia:",fake_date.day)
+print(fake_date.month)
+print(fake_date.year)
+
+#Dia actual
+today=date.today()
+print_weekday(today)
+
+#Modificacion de dias
+today=date(2025,7,12)
+print_weekday(today)
+yesterday=date(today.year,today.month,today.day-1)
+print_weekday(yesterday,"Yesterday was:")
+tomorrow=date(today.year,today.month,today.day+1)
+print_weekday(tomorrow,"Tomorrow will be:")
+
+
+diference=today-now.date()
+print(diference)
+
+#Time Delta
+from datetime import timedelta
+first_date= timedelta(185,125,65,0,30,15,24)
+other_date= timedelta(134,186,27,15,48,34,56)
+print(other_date - first_date)
+print(other_date + first_date)
