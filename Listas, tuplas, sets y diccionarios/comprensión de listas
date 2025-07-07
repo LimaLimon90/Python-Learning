@@ -1,0 +1,33 @@
+#Comprensión de listas
+#Es no solo un metodo de creacion y clonacion de listas, sino tambien de modificacion
+
+from math import pi
+
+#Metodos convenvionales
+old_list=[0,1,2,3,4,5,6,7,8,9]
+print(old_list)
+
+a_range=range(10)
+print(a_range)
+print(list(a_range))
+
+#Metodo de comprension
+my_list=list(i for i in old_list)
+print(my_list)
+
+#Metodo de modificacion 
+my_list=list(i+1 for i in old_list)
+print(my_list)
+
+#Operaciones directas
+radios=[2,3,5,7,11]
+areas=list(i*i*pi for i in radios)
+for radio,area in zip(radios,areas):
+	print(f"Para un circulo de radio {radio}, el area es igual a {area}")
+
+#Operaciones con funciones
+def five_times(number):
+	return number*5
+
+new_list=list(five_times(i) for i in old_list)
+print(new_list)
