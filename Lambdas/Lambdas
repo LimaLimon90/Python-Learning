@@ -1,0 +1,19 @@
+#Lambdas
+#Son funciones minimalistas que realizan tareas simples.
+
+#Declaracion
+sum_numbers=lambda val1,val2:val1+val2
+
+mult_numbers=lambda val1,val2:val1*val2-3
+
+#Lambdas dentro de funciones
+def add_numbers(number):
+	return lambda val1,val2:val1+val2+number
+
+def main():
+	print(sum_numbers(3,5))
+	print(mult_numbers(3,5))
+	print(add_numbers(7)(3,5))
+
+if __name__ in "__main__":
+	main()
